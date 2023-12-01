@@ -29,7 +29,7 @@ function [x_min,f_min,IFLAG,IFunc] = golden(xstart,epsilon,itmax)
         
         % check the convergence
         if abs(f1 - f2) < epsilon
-            continue
+            break
         end
     end
     % update x_min, f_min
